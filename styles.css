@@ -1,0 +1,176 @@
+body{
+    background-color: black;
+}
+
+
+.slider-frame {
+    width: 100%; /* Utiliza el 100% del ancho de la pantalla */
+    max-width: 100%; /* Puedes establecer un máximo si lo deseas */
+    height: auto;
+    margin:  auto 0;
+    overflow: hidden;
+    background-color: black;
+
+  }
+  
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%; /* 4 veces el ancho del contenedor */
+    background-color: none;
+    justify-content: center;
+    animation: slide 20s infinite forwards ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 25%; /* Cada elemento ocupa un 25% del ancho */
+    list-style: none;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra las imágenes verticalmente */
+  }
+  
+  .slider-frame img {
+    width: 80%; /* Asegúrate de que las imágenes sean del tamaño adecuado */
+    max-width: 200px; /* Puedes ajustar el tamaño máximo de la imagen */
+  }
+  
+  @keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+  }
+  
+
+  header {
+    position: relative;
+    background-image: url('./Assets/FONDO-DE-PORTADA.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    filter: contrast(1) brightness(3);
+    padding-bottom: 10px;
+  }
+  
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  .navbar-nav {
+    margin: auto;
+    transition: 1s;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  
+  .container-c {
+    position: relative;
+    padding-top: 30rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .title-large {
+    font-size: 3rem;
+  }
+  
+  .title-small {
+    font-size: 2rem;
+    color: red;
+  }
+  
+  .text-small {
+    font-size: 1.25rem;
+  }
+  
+  .dropdown-menu {
+    background-color: black;
+    border: none;
+  }
+  
+  .dropdown-item {
+    color: white;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .dropdown-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: red;
+  }
+  
+  main {
+    height: fit-content;
+  }
+  
+  footer {
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  @media (max-width: 992px) {
+    .navbar {
+      position: absolute;
+    }
+  }
+  /* Estilos personalizados para el acordeón */
+  
+  .accordion-button {
+    background-color: #141a20; /* Fondo negro para los botones */
+    color: white; /* Texto blanco */
+    border: 1px solid #495057; /* Borde gris oscuro */
+    transition: background-color 0.3s ease; /* Transición al pasar el ratón */
+  }
+
+  /* Cambiar el color del botón cuando está colapsado */
+  .accordion-button:not(.collapsed) {
+    background-color: #060708; /* Fondo gris más claro cuando se expande */
+    color: white;
+  }
+
+  /* Estilo del contenido expandido */
+  .accordion-body {
+    background-color: #080a0c; /* Fondo negro oscuro para el contenido */
+    color: rgb(155, 152, 152); /* Texto blanco */
+    border-top: 1px solid #495057; /* Borde superior gris */
+  }
+
+  /* Estilo cuando el acordeón está colapsado */
+  .accordion-item {
+    border: 1px solid #495057; /* Borde gris para cada sección */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre las secciones */
+  }
+
+  .accordion-header {
+    background-color: #343a40; /* Fondo negro en el encabezado */
+  }
+
+  /* Efecto de hover sobre los botones */
+  .accordion-button:hover {
+    background-color: #495057; /* Fondo gris cuando se pasa el ratón */
+    color: white;
+  }
