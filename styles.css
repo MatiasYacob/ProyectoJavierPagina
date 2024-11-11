@@ -1,5 +1,9 @@
 body{
     background-color: black;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f4f0;
+           
 }
 
 
@@ -54,7 +58,7 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
-    filter: contrast(1) brightness(3);
+    filter: contrast(1) brightness(2);
     padding-bottom: 10px;
   }
   
@@ -174,3 +178,50 @@ body{
     background-color: #495057; /* Fondo gris cuando se pasa el ratón */
     color: white;
   }
+
+  /* Footer Styles*/
+  .footer-container{
+    display: flex;
+    background-color: #060708;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .card{
+    height: 120px;
+    width: 49%;
+    background-color: rgb(7, 41, 41);
+    
+    
+  }
+  .card:hover{
+    background-color: #495057;
+    transition: 0.5s;
+  }
+  /* Stylos del main*/
+  .vintage-border {
+    border: 2px solid #78787a;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #040b20;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.divider {
+  background-color: #141a20;
+    border-bottom: 1px solid #5c4033;
+    margin: 15px 0;
+}
+.btn-vintage {
+    background-color: #5c4033;
+    color: #f8f4f0;
+    border-radius: 5px;
+}
+.btn-vintage:hover {
+    background-color: #8d5524;
+    color: #fff;
+}
