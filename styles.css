@@ -200,5 +200,19 @@ body{
     margin: 15px 0;
 }
 
+/* Estilo para los enlaces */
+.enlace {
+  text-decoration: underline;  /* Subraya el texto */
+  text-decoration-color: red;  /* Cambia el color del subrayado a rojo */
+  text-transform: uppercase;   /* Convierte el texto a mayúsculas */
+  color: inherit;              /* Hereda el color del texto (opcional) */
+}
+
+/* Cambiar el color de la línea al pasar el ratón (hover) */
+.enlace:hover {
+  color: red; /* Cambia el color del texto al pasar el ratón */
+  transition: 2s;
+
+}
 
 
