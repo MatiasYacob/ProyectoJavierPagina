@@ -65,6 +65,19 @@ body{
   .navbar-brand {
     font-size: 2rem;
   }
+  #portafolioCarousel .carousel-item img {
+   
+  
+
+    border-radius: 15px; /* Redondea las esquinas de las imágenes */
+   
+  }
+  #portafolioCarousel .carousel-inner {
+ 
+  justify-content: center; /* Centra las imágenes */
+}
+
+
   
   .container-c {
     position: relative;
@@ -75,6 +88,8 @@ body{
     justify-content: end;
     text-align: center;
     padding-bottom: 5px;
+   
+    
   }
   
   .title-large {
