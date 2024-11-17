@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "mundial";
+  src: url('./Assets/fonts/mundial/MundialRegular.otf');
+}
+
+
 body{
     background-color: black;
     padding: 2px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'mundial';
     color: #f8f4f0;
            
 }
@@ -13,7 +19,7 @@ body{
     height: auto;
     margin:  auto 0;
     overflow: hidden;
-    background-color: black;
+    background-color: none;
 
   }
   
@@ -38,6 +44,8 @@ body{
   .slider-frame img {
     width: 80%; /* Asegúrate de que las imágenes sean del tamaño adecuado */
     max-width: 200px; /* Puedes ajustar el tamaño máximo de la imagen */
+   background-color: #8d5524;
+   border-radius: 10px;
   }
   
   @keyframes slide {
@@ -128,6 +136,8 @@ body{
   
   main {
     height: fit-content;
+    background-color: #fff;
+    padding: 10px;
   }
   
   footer {
@@ -141,7 +151,10 @@ body{
     }
   }
   /* Estilos personalizados para el acordeón */
-  
+  .accordion{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
   .accordion-button {
     background-color: #141a20; /* Fondo negro para los botones */
     color: white; /* Texto blanco */
