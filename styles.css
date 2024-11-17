@@ -202,17 +202,30 @@ body{
 
 /* Estilo para los enlaces */
 .enlace {
-  text-decoration: underline;  /* Subraya el texto */
-  text-decoration-color: red;  /* Cambia el color del subrayado a rojo */
-  text-transform: uppercase;   /* Convierte el texto a mayúsculas */
-  color: inherit;              /* Hereda el color del texto (opcional) */
+  text-decoration: none;
+  text-transform: uppercase;    /* Convierte el texto a mayúsculas */
+  color: inherit;               /* Hereda el color del texto (opcional) */
+  position: relative;
+  display: block;               /* Asegura que el enlace sea bloque para manipular el subrayado */
+  padding-bottom: 10px;         /* Un poco de espacio debajo del enlace */
+  width: fit-content;
+  
 }
-
-/* Cambiar el color de la línea al pasar el ratón (hover) */
-.enlace:hover {
-  color: red; /* Cambia el color del texto al pasar el ratón */
+.enlace:hover{
+  color: red;
   transition: 2s;
-
 }
+
+
+
+hr.linea-separadora {
+  color: red;
+  border-radius: 1px red ;               /* Elimina el borde predeterminado */
+  height: 2px;                 /* Define el grosor de la línea */
+  background-color:   red;       /* Color de la línea */
+  margin: 5px 0;  
+  width: 350px;            /* Espacio antes y después de la línea */
+}
+
 
 
