@@ -25,6 +25,6 @@ This project involves developing a modern and professional website for a graphic
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/repository-name.git](https://github.com/MatiasYacob/ProyectoJavierPagina
-   Contributions
+   git clone https://github.com/MatiasYacob/ProyectoJavierPagina
+  ## Contributions
 If you have suggestions or want to contribute to the project, you're welcome! Please open an issue or submit a pull request.
