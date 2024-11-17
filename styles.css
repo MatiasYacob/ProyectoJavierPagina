@@ -5,10 +5,10 @@
 
 
 body{
-    background-color: black;
+    background-color: none;
     padding: 2px;
     font-family: 'mundial';
-    color: #f8f4f0;
+    
            
 }
 
@@ -54,6 +54,24 @@ body{
     50% { margin-left: -200%; }
     75% { margin-left: -300%; }
     100% { margin-left: -400%; }
+  }
+
+  .leyenda{
+    
+
+    border-radius: 5px;
+    background-color: red;
+    height: fit-content;
+    width: 120px;
+    border: none;
+    color: #fff;
+    
+    
+    
+  }
+  .text-center p {
+    color: rgba(128, 128, 128, 0.582); /* Cambia el color del texto a gris */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
   }
   
 
@@ -142,7 +160,10 @@ body{
   
   footer {
     height: 200px;
-    background-color: rgb(0, 0, 0);
+    background-color: none;
+  }
+  .img.img-fluid.vintage-border{
+    padding: 0;
   }
   
   @media (max-width: 992px) {
@@ -195,7 +216,7 @@ body{
   /* Footer Styles*/
   .footer-container{
     display: flex;
-    background-color: #060708;
+    background-color: none;
     justify-content: space-between;
     padding: 20px;
   }
@@ -225,7 +246,7 @@ body{
     color: #ffffff;
 }
 .divider {
-  background-color: #141a20;
+  background-color: #ffffff;
     border-bottom: 1px solid #5c4033;
     margin: 15px 0;
 }
