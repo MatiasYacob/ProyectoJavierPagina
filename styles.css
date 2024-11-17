@@ -13,48 +13,7 @@ body{
 }
 
 
-.slider-frame {
-    width: 100%; /* Utiliza el 100% del ancho de la pantalla */
-    max-width: 100%; /* Puedes establecer un máximo si lo deseas */
-    height: auto;
-    margin:  auto 0;
-    overflow: hidden;
-    background-color: none;
 
-  }
-  
-  .slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%; /* 4 veces el ancho del contenedor */
-    background-color: none;
-    justify-content: center;
-    animation: slide 20s infinite forwards ease-in-out;
-  }
-  
-  .slider-frame li {
-    width: 25%; /* Cada elemento ocupa un 25% del ancho */
-    list-style: none;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centra las imágenes verticalmente */
-  }
-  
-  .slider-frame img {
-    width: 80%; /* Asegúrate de que las imágenes sean del tamaño adecuado */
-    max-width: 200px; /* Puedes ajustar el tamaño máximo de la imagen */
-   background-color: #8d5524;
-   border-radius: 10px;
-  }
-  
-  @keyframes slide {
-    0% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    100% { margin-left: -400%; }
-  }
 
   .leyenda{
     
@@ -154,17 +113,14 @@ body{
   
   main {
     height: fit-content;
-    background-color: #fff;
     padding: 10px;
   }
   
   footer {
     height: 200px;
-    background-color: none;
+    
   }
-  .img.img-fluid.vintage-border{
-    padding: 0;
-  }
+ 
   
   @media (max-width: 992px) {
     .navbar {
@@ -232,14 +188,7 @@ body{
     transition: 0.5s;
   }
   /* Stylos del main*/
-  .vintage-border {
-    border: 2px solid #78787a;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #040b20;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
+
 .section-title {
     font-size: 2rem;
     font-weight: bold;
@@ -250,12 +199,4 @@ body{
     border-bottom: 1px solid #5c4033;
     margin: 15px 0;
 }
-.btn-vintage {
-    background-color: #5c4033;
-    color: #f8f4f0;
-    border-radius: 5px;
-}
-.btn-vintage:hover {
-    background-color: #8d5524;
-    color: #fff;
-}
+
