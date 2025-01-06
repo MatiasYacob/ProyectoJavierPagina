@@ -1,37 +1,19 @@
-// $(function(){
-//     console.log('jQuery cargado y listo.');
+//Funcion para el Carrousel
+const buttons = document.querySelectorAll("[data-carousel-button]")
 
-//     // Inicializar el carrusel para que funcione en pantallas pequeñas
-//     $('#portafolioCarousel').carousel({
-//       interval: 3000, // Intervalo entre las imágenes en milisegundos
-//       ride: 'carousel' // Para que el carrusel comience automáticamente
-//     });
-//     console.log('Carrusel inicializado.');
-  
-//     // Asegurarse de que solo una imagen se muestre a la vez en pantallas pequeñas
-//     $(window).resize(function() {
-//       console.log('Tamaño de ventana cambiado: ' + $(window).width() + 'px');
-      
-//       if ($(window).width() <= 767) {
-//         console.log('Pantalla pequeña detectada, mostrando una sola imagen.');
-//         // Mostrar solo un ítem por vez en pantallas pequeñas
-//         $('.carousel-inner').css('display', 'block');
-//       } else {
-//         console.log('Pantalla grande detectada, mostrando múltiples imágenes.');
-//         // Dejar el comportamiento por defecto en pantallas grandes
-//         $('.carousel-inner').css('display', 'flex');
-//       }
-//     });
-  
-//     // Detectar si el carrusel avanza
-//     $('#portafolioCarousel').on('slid.bs.carousel', function () {
-//       console.log('El carrusel ha avanzado a la siguiente imagen.');
-//     });
-  
-//     // Detectar si el carrusel retrocede
-//     $('#portafolioCarousel').on('slide.bs.carousel', function () {
-//       console.log('El carrusel va a retroceder a la imagen anterior.');
-//     });
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
 
-// })
- 
+    const activeSlide = slides.querySelector("[data-active]")
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+
+    slides.children[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+  })
+})

@@ -1,0 +1,4 @@
+darle espacio a los objetos
+refactorizar el carruousel
+4rem en cada "ancla"
+ajustar el reponsive
