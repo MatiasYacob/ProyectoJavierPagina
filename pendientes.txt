@@ -1,4 +1,4 @@
 darle espacio a los objetos
-refactorizar el carruousel
+refactorizar el carruousel listo
 4rem en cada "ancla"
 ajustar el reponsive
