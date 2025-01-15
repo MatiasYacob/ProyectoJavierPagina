@@ -13,7 +13,6 @@
   src: url('./Assets/fonts/mundial/MundialBold.otf');
 }
 
-
 *, *::before, *::after{
   box-sizing: border-box;
 }
@@ -23,33 +22,21 @@ body {
   padding: 2px;
   font-family: 'mundial';
   margin: 0;
-
 }
 
-
-
-
 .leyenda {
-
-
   border-radius: 5px;
   background-color: red;
   height: fit-content;
   width: 120px;
   border: none;
   color: #fff;
-
-
-
 }
 
 .text-center p {
   color: rgba(128, 128, 128, 0.582);
-  /* Cambia el color del texto a gris */
   font-size: 14px;
-  /* Ajusta el tamaño de la fuente */
 }
-
 
 header {
   position: relative;
@@ -85,30 +72,24 @@ header {
 }
 
 .branding {
-
-
   text-align: center;
-
   height: fit-content;
-
 }
 
 .title-large {
   font-size: 4rem;
   font-family: 'mundial-bold';
-
 }
 
 .title-small {
   position: relative;
-  top: -18%;
-  right: 1%;
-  font-size: 0.9rem;
-  color: red;
+  top: -14%;
+  right: 1.2%;
+  font-size: 0.85rem;
+  color: #ff004e;
   font-family: 'mundial-light';
   text-transform: uppercase;
   letter-spacing: 0.43rem;
-
 }
 
 .text-small {
@@ -143,16 +124,7 @@ main {
 
 footer {
   height: 200px;
-
 }
-
-
-@media (max-width: 992px) {
-  .navbar {
-    position: absolute;
-  }
-}
-/*Estilos del Carrousel*/
 
 .carrousellcontainer {
   display: flex;
@@ -201,8 +173,6 @@ footer {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
- 
-  
 }
 
 .carousel-button {
@@ -238,43 +208,95 @@ footer {
   right: -5rem;
 }
 
-@media (max-width: 768px) {
+footer {
+  background-color: black;
+}
 
+.footer-container {
+  display: flex;
+  background-color: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  height: 120px;
+  width: 49%;
+  background-color: rgb(7, 41, 41);
+}
+
+.card:hover {
+  background-color: #495057;
+  transition: 0.5s;
+}
+
+.divider {
+  background-color: #ffffff;
+  border-bottom: 1px solid #5c4033;
+  margin: 15px 0;
+}
+
+.enlace {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+
+.enlace:hover {
+  color: red;
+  transition: 2s;
+}
+
+hr.linea-separadora {
+  color: red;
+  border-radius: 1px red;
+  height: 2px;
+  background-color: red;
+  margin: 5px 0;
+  width: 350px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .navbar {
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
   .title-small {
     position: relative;
     top: -15%;
-    right: 2%;
+    right: 1.8%;
     font-size: 0.9rem;
-    color: red;
     font-family: 'mundial-light';
     text-transform: uppercase;
     letter-spacing: 0.43rem;
-  
   }
-
-
 
   .carrousellcontainer {
     display: flex;
     justify-content: flex-start;
   }
 
-
   .carousel {
     width: 100%;
     height: 30vh;
-    
   }
-  .slide{
+
+  .slide {
     justify-content: space-around;
     align-items: center;
   }
 
   .slide > img {
-    
     margin: 2px;
-    max-width:9rem ;
-    max-height:12rem ;
+    max-width: 9rem;
+    max-height: 12rem;
   }
 
   .carousel-button {
@@ -291,70 +313,14 @@ footer {
   }
 }
 
-
-
-/* Footer Styles*/
-footer{
-  background-color: black;
-}
-.footer-container {
-  display: flex;
-  background-color: none;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.card {
-  height: 120px;
-  width: 49%;
-  background-color: rgb(7, 41, 41);
-
-
-}
-
-.card:hover {
-  background-color: #495057;
-  transition: 0.5s;
-}
-
-/* Stylos del main*/
-.divider {
-  background-color: #ffffff;
-  border-bottom: 1px solid #5c4033;
-  margin: 15px 0;
-}
-
-/* Estilo para los enlaces */
-.enlace {
-  text-decoration: none;
-  text-transform: uppercase;
-  /* Convierte el texto a mayúsculas */
-  color: inherit;
-  /* Hereda el color del texto (opcional) */
-  position: relative;
-  display: block;
-  /* Asegura que el enlace sea bloque para manipular el subrayado */
-  padding-bottom: 10px;
-  /* Un poco de espacio debajo del enlace */
-  width: fit-content;
-
-}
-
-.enlace:hover {
-  color: red;
-  transition: 2s;
-}
-
-
-hr.linea-separadora {
-  color: red;
-  border-radius: 1px red;
-  /* Elimina el borde predeterminado */
-  height: 2px;
-  /* Define el grosor de la línea */
-  background-color: red;
-  /* Color de la línea */
-  margin: 5px 0;
-  width: 350px;
-  /* Espacio antes y después de la línea */
+@media (max-width: 390px) {
+  .title-small {
+    position: relative;
+    top: -12%;
+    right: 3.2%;
+    font-size: 0.9rem;
+    font-family: 'mundial-light';
+    text-transform: uppercase;
+    letter-spacing: 0.43rem;
+  }
 }
